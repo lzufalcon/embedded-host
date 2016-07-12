@@ -1,0 +1,97 @@
+#
+# Daily tools for embedded hackers ;-)
+#
+
+# Terminal
+terminator
+--force-yes screen
+bash-completion
+
+# Editors
+vim
+emacs
+libreoffice-writer
+libreoffice-impress
+
+# Web browser
+--force-yes chromium-browser
+
+# Virtual Machine
+virtualbox
+qemu
+qemu-user-static
+wine
+
+# SCM
+git
+git-email
+cscope
+ctags
+meld
+
+# Notes
+tomboy
+
+# Window
+libncurses-dev
+
+# Uboot tools
+u-boot-tools
+
+# Windows Compatible
+dos2unix
+ntfs-3g
+
+# Programming
+indent
+
+# C
+build-essential
+multiarch-support
+gcc-multilib
+binutils-multiarch
+gdb-multiarch
+libc6-i386
+libc6-dev-i386
+
+# Java
+openjdk-7-jre
+openjdk-7-jdk
+
+# Kernel
+kernelshark
+
+# Compress/Decompress
+lzop
+xz-utils
+rar
+unrar
+gzip
+
+# Player
+flashplugin-installer
+mplayer
+
+# Graphic
+gimp
+dia
+shutter
+imagemagick
+
+# Input Method
+ibus-sunpinyin
+
+# Android tools
+android-tools-adb
+android-tools-adbd
+android-tools-fastboot
+
+# Network
+openssh-client
+--force-yes openssh-server
+btsync
+wget
+filezilla
+
+# Calculator
+bc
