@@ -54,6 +54,15 @@ gdb-multiarch
 libc6-i386
 libc6-dev-i386
 
+# Cross toolchains
+gcc-arm-linux-gnueabi
+gcc-aarch64-linux-gnu
+gcc-powerpc-linux-gnu
+gcc-powerpc64le-linux-gnu
+
+# Cross Rootfs
+debootstrap
+
 # Java
 openjdk-7-jre
 openjdk-7-jdk
