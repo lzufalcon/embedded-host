@@ -14,12 +14,13 @@ if [ $? -eq 1 ]; then
 
     echo "Note: To let docker work without sudo, please restart the X session."
 
-
-    sudo sed -i -e "/ALIYUN REGISTRY START 578327498237/,/ALIYUN REGISTRY END 789527394722/d" /etc/default/docker
+    sudo sed -i -e "/DOCKER HACK START 578327498237/,/DOCKER HACK END 789527394722/d" /etc/default/docker
     sudo bash -c 'cat <<EOF >> /etc/default/docker
-# ALIYUN REGISTRY START 578327498237
+# DOCKER HACK START 578327498237
 DOCKER_OPTS="\$DOCKER_OPTS --insecure-registry=registry.mirrors.aliyuncs.com"
-# ALIYUN REGISTRY END 789527394722
+DOCKER_OPTS="\$DOCKER_OPTS --dns 8.8.8.8 --dns 8.8.4.4"
+DOCKER_OPTS="\$DOCKER_OPTS --bip=10.66.33.10/24"
+# DOCKER HACK END 789527394722
 EOF'
 
     sudo pkill docker
