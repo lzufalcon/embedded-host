@@ -46,6 +46,7 @@ ntfs-3g
 indent
 
 # C
+bison
 build-essential
 multiarch-support
 gcc-multilib
@@ -110,7 +111,11 @@ pandoc
 texlive-xetex
 texlive-latex-recommended
 texlive-latex-extra
-latex-cjk-common latex-cjk-chinese
+texlive-fonts-extra
+texlive-fonts-recommended
+texlive-science
+latex-cjk-common
+latex-cjk-chinese
 latex-cjk-chinese-arphic-bkai00mp
 latex-cjk-chinese-arphic-bsmi00lp
 latex-cjk-chinese-arphic-gbsn00lp
