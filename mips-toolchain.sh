@@ -3,7 +3,7 @@
 # Install mips toolchain from emdebian.org
 #
 
-sudo bash -c 'echo deb http://www.emdebian.org/debian/ stable main > /etc/apt/sources.list.d/emdebian.list'
+sudo bash -c 'echo deb http://www.emdebian.org/debian/ wheezy main > /etc/apt/sources.list.d/emdebian.list'
 sudo apt-get install -y emdebian-archive-keyring
 sudo apt-get -y update
 # pushd misc
