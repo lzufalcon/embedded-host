@@ -130,3 +130,6 @@ fonts-arphic-gkai00mp
 ttf-wqy-microhei
 ttf-wqy-zenhei
 ttf-mscorefonts-installer
+
+# Mind Mapping tools
+freemind
