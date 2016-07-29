@@ -108,6 +108,7 @@ bc
 
 # Markdown, Latex, Beamer
 pandoc
+retext
 texlive-xetex
 texlive-latex-recommended
 texlive-latex-extra
