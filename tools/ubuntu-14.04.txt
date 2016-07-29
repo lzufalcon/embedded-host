@@ -134,3 +134,7 @@ ttf-mscorefonts-installer
 
 # Mind Mapping tools
 freemind
+
+# apt-get
+apt-transport-https
+ca-certificates
