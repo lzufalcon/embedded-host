@@ -103,6 +103,7 @@ btsync
 wget
 filezilla
 nmap
+sshfs
 
 # Calculator
 bc
