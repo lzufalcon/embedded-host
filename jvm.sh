@@ -5,9 +5,9 @@
 
 version=6
 
-yes | sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install -y oracle-java${version}-installer
+sudo add-apt-repository -y ppa:webupd8team/java
+sudo apt-get -y update
+sudo apt-get install -y --force-yes oracle-java${version}-installer
 
 sed -i -e "/ORACLE JAVA START 7582374572/,/ORACLE JAVA END 3242352345/d" ~/.bashrc
 cat <<EOF
