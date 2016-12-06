@@ -10,7 +10,8 @@ sudo apt-get -y update
 sudo apt-get install -y --force-yes oracle-java${version}-installer
 
 sed -i -e "/ORACLE JAVA START 7582374572/,/ORACLE JAVA END 3242352345/d" ~/.bashrc
-cat <<EOF
+
+cat <<EOF >> ~/.bashrc
 # ORACLE JAVA START 7582374572
 export JAVA_HOME=/usr/lib/jvm/java-6-oracle/
 export PATH=\$JAVA_HOME/bin:\$PATH
