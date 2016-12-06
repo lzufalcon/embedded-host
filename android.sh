@@ -11,7 +11,7 @@ studio_file=android-studio-ide-${studio_minor_version}-linux.zip
 studio_url=https://dl.google.com/dl/android/studio/ide-zips/${studio_major_version}/$studio_file
 if [ ! -f $studio_file ]; then
     wget -c $studio_url
-    unzip $studio_file
+    unzip -n -q $studio_file
 fi
 
 sdk_version=r24.4.1
@@ -19,7 +19,7 @@ sdk_file=android-sdk_${sdk_version}-linux.tgz
 sdk_url=https://dl.google.com/android/$sdk_file
 if [ ! -f $sdk_file ]; then
     wget -c $sdk_url
-    tar zxf $sdk_file
+    tar --skip-old-files -zxf $sdk_file
 fi
 
 # https://github.com/android-ndk/ndk/wiki
@@ -28,7 +28,8 @@ ndk_file=android-ndk-${ndk_version}-linux-x86_64.zip
 ndk_url=https://dl.google.com/android/repository/$ndk_file
 if [ ! -f $ndk_file ]; then
     wget -c $ndk_url
-    unzip $ndk_file
+    rm -rf android-ndk-linux
+    unzip -n -q $ndk_file
     mv android-ndk-${ndk_version} android-ndk-linux
 fi
 
